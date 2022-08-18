@@ -28,7 +28,7 @@ class PhoneInput extends StatelessWidget {
             const InputDecoration(hintText: "请输入手机号", hintStyle: t14lightGrey),
         textInputAction: TextInputAction.done,
         inputFormatters: <TextInputFormatter>[
-          LengthLimitingTextInputFormatter(13)
+          LengthLimitingTextInputFormatter(11)
         ],
         // onChanged: (v) => _splitPhoneNumber(v),
       )),

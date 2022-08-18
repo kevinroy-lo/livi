@@ -2,7 +2,7 @@ part of 'login_bloc.dart';
 
 enum FormzStatus { yes, no }
 
-class LoginState extends Equatable {
+class LoginState {
   final FormzStatus status;
   final String username;
 
@@ -10,17 +10,4 @@ class LoginState extends Equatable {
     this.status = FormzStatus.no,
     this.username = '',
   });
-
-  LoginState copyWith({
-    FormzStatus? status,
-    String? username,
-  }) {
-    return LoginState(
-      status: status ?? this.status,
-      username: username ?? this.username,
-    );
-  }
-
-  @override
-  List<Object> get props => [status, username];
 }

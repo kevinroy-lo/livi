@@ -12,6 +12,9 @@ class HistoryInitial extends HistoryState {}
 class HistoryPickListState extends HistoryState {
   final List<HistoryPhonePickState> items;
   const HistoryPickListState({required this.items});
+
+  @override
+  List<Object> get props => [items];
 }
 
 class HistoryPhonePickState extends HistoryState {
